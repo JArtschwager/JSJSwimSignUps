@@ -13,3 +13,8 @@ questions
 1)html paths and the # on the swim levels page, should i leave it?
 2) the posting of new classes, admin page, how in depth do we want to go?
 3) UUID and adding in the unqiue Id's to the database
+
+
+
+FYI
+1) i'm ignoring the contact.js because of the API key and firebase, may not need going forward anyways.
