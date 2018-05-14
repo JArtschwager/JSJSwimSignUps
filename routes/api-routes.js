@@ -4,19 +4,15 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
   app.get("/api/description", function(req, res) {
-    
     db.Class_description.findAll({
-      // where: query,
-      // include: [db.some other table when ready]
+      include: [db.instance]//adding the coresponding instance folder.
     }).then(function(dbClass_description) {
       res.json(dbClass_description);
     });
   });
 
   app.get("/api/instance", function(req, res) {
-    
     db.Class_instance.findAll({
-      // where: query,
       // include: [db.some other table when ready]
     }).then(function(dbClass_instance) {
       res.json(dbClass_instance);
@@ -24,9 +20,7 @@ module.exports = function(app) {
   });
 
   app.get("/api/participant", function(req, res) {
-    
     db.Class_participant.findAll({
-      // where: query,
       // include: [db.some other table when ready]
     }).then(function(dbClass_participant) {
       res.json(dbClass_participant);
@@ -34,9 +28,7 @@ module.exports = function(app) {
   });
 
   app.get("/api/userid", function(req, res) {
-    
     db.User_ID.findAll({
-      // where: query,
       // include: [db.some other table when ready]
     }).then(function(dbUser_ID) {
       res.json(dbUser_ID);

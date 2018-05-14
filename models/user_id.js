@@ -1,5 +1,5 @@
 
-//sumathi is working on this page
+// //sumathi is working on this page
 //---------------user ID---------------------//
 module.exports = function (sequelize, DataTypes) {
     var User_ID =sequelize.define('User_ID', {

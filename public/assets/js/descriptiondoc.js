@@ -1,13 +1,12 @@
 //going to be used as an /api/addclass page for creating classes.
 $(document).ready(function () {
-            var nameInput = $("#className")
-            var ageMinInput = $("#ageMin")
-            var ageMaxInput = $("#ageMax")
-            var legnthInput = $("#length")
+            var nameInput = $("#className").val().trim()
+            var ageMinInput = $("#ageMin").val().trim()
+            var ageMaxInput = $("#ageMax").val().trim()
+            var legnthInput = $("#length").val().trim()
 
             //event listener for submittion
             $(document).on("submit", "#description-form", hanldeFormSubmit);
-
 
 
             //more may need to be added here. check back cms.js. will need to get list of past classes
@@ -19,27 +18,17 @@ $(document).ready(function () {
                 }
 
                 var newDescription = {
-                    class_name: nameInput
-                        .val()
-                        .trim(),
-                    age_min: ageMinInput
-                        .val()
-                        .trim(),
-                    age_max: ageMaxInput
-                        .val()
-                        .trim(),
-                    length: lengthInput
-                        .val()
-                        .trim(),
+                    class_name: nameInput,
+                    age_min: ageMinInput,
+                    age_max: ageMaxInput,
+                    length: lengthInputz,
                 };
-
                 submitPost(newDescription);
-                        
                 };
 
 
                 function submitPost(class_description) {
-                    $.post("/api/description", class_description, function () {
+                    $.post("/api/description", class_description, function () { //may want to do req res down.
                         window.location.href = "/contact";
                     });
                 }
@@ -85,6 +74,4 @@ $(document).ready(function () {
                             window.location.href = "/contact";
                         });
                 }
-
-
             });

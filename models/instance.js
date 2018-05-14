@@ -1,6 +1,7 @@
 // --------------------class instances------------------//
 module.exports = function (sequelize, DataTypes) {
     var Class_instance = sequelize.define("Class_instance", {
+      //add the validation. 
       Week_day: {
         type: DataTypes.STRING
       },
@@ -10,9 +11,9 @@ module.exports = function (sequelize, DataTypes) {
       end_date: {
         type: DataTypes.INTEGER
       },
-      seats_available: {
-        type: DataTypes.INTEGER
-      },
+      // seats_available: {
+      //   type: DataTypes.INTEGER
+      // }, to be populated by js.   
       seats_total: {
         type: DataTypes.INTEGER
       },

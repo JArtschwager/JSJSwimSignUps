@@ -15,5 +15,8 @@ module.exports = function (sequelize, DataTypes) {
   //   withdrawal_date DATETIME,
   //   parent_id VARCHAR(40) NULL,
   //   PRIMARY KEY (class_participant_id)
+  //family ID/child ID and class instance. 
+
+  //this will be made by merging together everything else.
 
  
