@@ -1,3 +1,4 @@
+
 'use strict';
 
 var fs        = require('fs');
@@ -22,6 +23,7 @@ fs
   .forEach(file => {
     var model = sequelize['import'](path.join(__dirname, file));
     db[model.name] = model;
+    //i changed the line above from model.name to a file name in models b/c of terminal error.
   });
 
 Object.keys(db).forEach(modelName => {
