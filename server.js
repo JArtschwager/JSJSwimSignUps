@@ -5,6 +5,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require('express-handlebars');
 var uuid = require("uuid");
+var mysql = require("mysql");
 
 
 var app = express();
@@ -27,7 +28,9 @@ app.set("view engine", "handlebars");
 
 // Routes
 require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+require("./routes/descr-api-routes.js")(app);
+require("./routes/inst-api-routes.js")(app);
+
 
 //Routes to send email
 require("./routes/email-api-routes.js")(app,db);
