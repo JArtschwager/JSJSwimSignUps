@@ -18,20 +18,18 @@
   },
   "homepage": "https://github.com/ghSB17/JSJSwim--SignUps#readme",
   "dependencies": {
-    
-    "sequelize":"*",
-    "path": "*",
-    "fs": "*",
-   "body-parser": "*",
-    "nodemailer":"*",
-    "mysql2": "*",
-    "sequelize":"*",
-    "path": "*",
-    "fs": "*",
-    "express-handlebars": "*",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "*",
     "express": "*",
+    "express-handlebars": "*",
+    "fs": "*",
     "handlebars": "^4.0.11",
     "mysql": "^2.11.1",
-
+    "mysql2": "*",
+    "nodemailer": "*",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "*",
+    "sequelize": "*"
   }
 }
