@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "new_user",
-    "password": "",
-    "database": "swimproject_db",
+    "username": "root",
+    "password": null,
+    "database": "jsjswim_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
