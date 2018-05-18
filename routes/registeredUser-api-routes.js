@@ -5,7 +5,7 @@ module.exports = function (app, db) {
 
     app.post("/api/signin", passport.authenticate("local"), function (req, res) {
         console.log(req.user);
-        res.json("/locations");
+        res.json(req.user);
     })
 
     app.get("/api/registeredUser", function (req, res) {
