@@ -52,6 +52,10 @@ module.exports = function (sequelize, DataTypes) {
         zipCode: {
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        phoneNumber: {
+            type:DataTypes.STRING,
+            allowNull:false
         }
 
     }, {
