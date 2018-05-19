@@ -22,6 +22,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/swimlevels.html"));
   });
 
+  app.get("/register", function(req, res) {
+    res.sendFile(path.join(__dirname,"../public/register.html"));
+  })
+
   app.get("/learning", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/learning.html"));
   });
@@ -36,6 +40,7 @@ module.exports = function(app) {
 
   app.get("/login", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
+
   });
 
   app.get("/admin", function(req, res) {
