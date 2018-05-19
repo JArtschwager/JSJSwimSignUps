@@ -40,7 +40,17 @@ module.exports = function(app) {
 
   app.get("/login", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
+
   });
+
+  app.get("/admin", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/admin.html"));
+  });
+
+  app.get("/courses", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/courses.html"));
+  });
+
 
   
 };
