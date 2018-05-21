@@ -40,7 +40,7 @@ module.exports = function(app) {
 
   app.get("/login", function(req, res) {
     if(req.user) {
-      return res.redirect("/locations");
+      return res.redirect("/courses");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
 
