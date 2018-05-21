@@ -205,7 +205,7 @@
             new_class.append("<div class='course-age'>" + humanize_age(data[i].age_min) + " - " + humanize_age(data[i].age_max) + "</div>");
             new_class.append("<div class='course-length'>" + data[i].length + " minutes</div>");
             // add buttons/actions
-            new_class.append("<div class='course-actions'><a id='signup-btn' data-courseid='"+data[i].id+"'>Signup</a></div>");
+            new_class.append("<div class='course-actions'><a class='signup-btn' data-courseid='"+data[i].id+"' href='"+"/api/coursesInstances/"+data[i].id+"'>Signup</a></div>");
             // append the row to the table tbody
             $("#courses-list").append(new_class);
 
@@ -213,8 +213,6 @@
         };
     });
   </script>
-
-
 
 </body>
 

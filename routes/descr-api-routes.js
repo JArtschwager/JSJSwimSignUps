@@ -8,7 +8,7 @@ module.exports = function (app) {
       // include: [db.instance]//adding the coresponding instance folder.
     }).then(function (dbClass_description) {
       res.json(dbClass_description);
-      console.log(dbClass_description);
+      // console.log(dbClass_description);
     });
   });
 
