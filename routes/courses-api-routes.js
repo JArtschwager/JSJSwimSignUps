@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 var emailToParent = require("./emaildetails");
 
 
@@ -25,18 +23,10 @@ module.exports = function (app, db) {
   app.post("/api/participant", function (req, res) {
 
     console.log("In get participant API");
-    db.Class_participant.findOne({
-      where: {
-        ClassDescriptionId: req.body.participant.ClassDescriptionId,
-        ClassInstanceId: req.body.participant.ClassInstanceId,
-        FamilyId: req.body.participant.FamilyId,
-        UserId: req.body.participant.UserId,
-        FullName: req.body.participant.FullName
-      }
-    }).then(function (resData) {
-      res.json(resData);
+    db.sequelize.query(req.body.sqlString).then(function(resultData){
+      res.json(resultData);
     })
-
+    
   })
 
   app.post("/api/classParticipant", function (req, res) {
@@ -47,6 +37,7 @@ module.exports = function (app, db) {
       db.sequelize.query(sqlString).then(function (result) {
         for (var i = 0; i < req.body.participantData.length; i++) {
           emailData.push({
+            className: result[0][0].class_name,
             startDate: result[0][0].start_date,
             endDate: result[0][0].end_date,
             time: result[0][0].time,
@@ -66,4 +57,3 @@ module.exports = function (app, db) {
 
 
 }
->>>>>>> f1c249bd2e83381b0af5585fd09f1dec1de6d8e3
