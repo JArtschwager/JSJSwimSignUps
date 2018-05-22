@@ -21,14 +21,15 @@ module.exports = function (db, data, emailaddr, childData) {
 
     function txtForCourses() {
         var html = "<h3>"+ "Hello "+data[0].ParentName+"! <br>";
-        html += "You have Registered members of Your Family at JSJSwim for Swim Lessons.<br>Registration Details:<br>";
+        html += "You have Registered members of Your Family at JSJSwim for Swim Lessons.<br>Registration Details:<br><br>";
 
             for (var i = 0; i < data.length; i++) {
+                html+="Class: "+data[i].className;
                 html += " Class Start Date: " + data[i].startDate + "<br>";
                 html += " Class End Date: " + data[i].endDate + "<br>";
                 html += " Class Time: " + data[i].time + "<br>";
                 html+=" Class Length: "+data[i].length+" mins<br>";
-                html += "Student: " + data[i].fullName + "<br><br><br>";
+                html += "Student: " + data[i].fullName + "<br><br>";
             }
             return html;
       
