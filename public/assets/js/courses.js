@@ -8,27 +8,32 @@ $(document).ready(function () {
 
         var id = $(this).data('instanceid');
         var iddiv = $("#div" + id);
+        var participantObj=[];
         var participantData = [];
         var flag = true;
         var len = iddiv.find("input").length;
-        
-        var i = 0;
+        var i=0;
+        var sqlString=""
         iddiv.find("input").each(function () {
-            i++;
             alert(i);
             var state = $(this).prop("checked");
             var userId = $(this).attr("data-userid");
             var fName = $(this).attr("value");
+    
             if (state) {
-                var participantObj = {
+                participantObj.push({
                     ClassDescriptionId: ClassDescriptionId,
                     ClassInstanceId: classInstanceId,
                     FamilyId: familyId,
                     UserId: userId,
                     FullName: fName
-                };
-                console.log(participantObj);
-                $.ajax({
+                });
+                sqlString+="SELECT * FROM class_instances WHERE ClassDescriptionId ="+ClassDescriptionId+ "and ClassInstanceId="+classInstanceId+ " and FamilyId= "+familyId+ " and UserId="+userId+" UNION";
+            }
+        });
+        console.log(participantObj);
+        
+        $.ajax({
                     type: "POST",
                     url: "/api/participant",
                     data: {
@@ -67,7 +72,7 @@ $(document).ready(function () {
                     }
                 })
 
-            }else if (i === len) {
+         if (i === len) {
                 if (participantData.length > 0 && flag) {
                     console.log(participantData);
                     $.ajax({
@@ -88,7 +93,7 @@ $(document).ready(function () {
                     $("#errorData").html("2)<h4>You MUST select members to complete registration!!</h4>");
                 }
             }
-        });
+    
 
     })
 
