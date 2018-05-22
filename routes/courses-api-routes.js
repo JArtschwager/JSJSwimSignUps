@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 var emailToParent = require("./emaildetails");
 
 
@@ -51,4 +49,3 @@ app.get("/api/instance/:id", function(req, res) {
 
 
 }
->>>>>>> f1c249bd2e83381b0af5585fd09f1dec1de6d8e3
