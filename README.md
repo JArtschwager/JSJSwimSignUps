@@ -38,14 +38,51 @@ This website is a good template for a service providing company that needs a tem
 
 
 ### ERD
-* Flowchart here
+![Flowchart Image](./notes/Flowchart_DB.png)
+
 
 ### JSJ Swim School 
-* Screenshots here
+* Home Page
+![Home page](./notes/homepage.png)
+
+* User Login
+![Login](./notes/Login_Register.png)
+
+* User Sign-in 
+![Sign-up Page](./notes/Signup.png)
+
+* Course Registration 
+![Course Registration](./notes/Course_Registration.png)
+
+* Registration Confirmation
+![Registration Confirmatio](./notes/Registered.png)
+
+* Courses  
+![Courses](./notes/Courses.png)
+
+* Courses - Error 
+![Courses Error](./notes/Error-AlreadySignedUp.png)
+
+* Registered Email 
+![Registered Email](./notes/RegisteredEmail.png)
+
+* Class Confirmation Email 
+![Class Confirmation Email](./notes/ClassSignUp.png)
+
+### Admin
+
+* Admin 
+![Admin](./notes/admin.png)
+
+* Class Descriptions 
+![Admin - Class Descriptions](./notes/Class_Description.png)
+
+* Class Instance 
+![Admin - Class Instance](./notes/Class_Instance.png)
 
 ### Quick Start
 
-T0 run a local / development copy:
+To run a local / development copy:
 
 1. Update the config.json file:
 ```json
