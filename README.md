@@ -38,7 +38,7 @@ This website is a good template for a service providing company that needs a tem
 
 
 ### ERD
-![Flowchart Image](./notes/Flowchart_DB.png)
+![Flowchart Image](./notes/JSJSWIM_DB.png)
 
 
 ### JSJ Swim School 
