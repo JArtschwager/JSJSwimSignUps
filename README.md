@@ -22,6 +22,7 @@ This website is a good template for a service providing company that needs a tem
 - uuid
 - bcrypt-node.js
 - Ajax
+- nodemailer
 
 ### Front End
 * HTML
@@ -43,42 +44,42 @@ This website is a good template for a service providing company that needs a tem
 
 ### JSJ Swim School 
 * Home Page
-![Home page](./notes/homepage.png)
+![Home page](./notes/homepage.PNG)
 
 * User Login
-![Login](./notes/Login_Register.png)
+![Login](./notes/Login_Register.PNG)
 
 * User Sign-in 
-![Sign-up Page](./notes/Signup.png)
+![Sign-up Page](./notes/Signup.PNG)
 
 * Course Registration 
-![Course Registration](./notes/Course_Registration.png)
+![Course Registration](./notes/Course_Registration.PNG)
 
 * Registration Confirmation
-![Registration Confirmatio](./notes/Registered.png)
+![Registration Confirmation](./notes/Registered.PNG)
 
 * Courses  
 ![Courses](./notes/Courses.png)
 
 * Courses - Error 
-![Courses Error](./notes/Error-AlreadySignedUp.png)
+![Courses Error](./notes/Error-AlreadySignedUp.PNG)
 
 * Registered Email 
-![Registered Email](./notes/RegisteredEmail.png)
+![Registered Email](./notes/RegisteredEmail.PNG)
 
 * Class Confirmation Email 
-![Class Confirmation Email](./notes/ClassSignUp.png)
+![Class Confirmation Email](./notes/ClassSignUp.PNG)
 
 ### Admin
 
 * Admin 
-![Admin](./notes/admin.png)
+![Admin](./notes/admin.PNG)
 
 * Class Descriptions 
-![Admin - Class Descriptions](./notes/Class_Description.png)
+![Admin - Class Descriptions](./notes/Class_Description.PNG)
 
 * Class Instance 
-![Admin - Class Instance](./notes/Class_Instance.png)
+![Admin - Class Instance](./notes/Class_Instance.PNG)
 
 ### Quick Start
 
